@@ -10,6 +10,13 @@ export default {
   ],
   theme: {
     fontSize: {
+      xs: [
+        "0.875rem",
+        {
+          lineHeight: "1.3125rem",
+          fontWeight: "500",
+        },
+      ],
       sm: [
         "0.937rem",
         {
@@ -47,6 +54,13 @@ export default {
         "1.5rem",
         {
           lineHeight: "1.625rem",
+          fontWeight: "600",
+        },
+      ],
+      h1: [
+        "2.25rem",
+        {
+          lineHeight: "2.5rem",
           fontWeight: "600",
         },
       ],
@@ -101,10 +115,22 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
       },
+      keyframes: {
+        marque: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marque: "marque var(--duration) linear infinite",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      blur: {
+        "4xl": "235px",
       },
     },
   },
